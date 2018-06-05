@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/grass_and_water_assets1.png-428367d564618bbf9866d7b242528660.stex"
+path="res://.import/grass_water_pathways_assets.png-084d34e8a84dc4252428f53e49381f29.stex"
 
 [deps]
 
-source_file="res://Scenes/Level/Assets/grass_and_water_assets1.png"
-source_md5="ee88883f6fd2ff2e1682350dac341f4a"
+source_file="res://Scenes/Level/Assets/grass_water_pathways_assets.png"
+source_md5="685a4b51cb82531b7a7a031ad2db9c87"
 
-dest_files=[ "res://.import/grass_and_water_assets1.png-428367d564618bbf9866d7b242528660.stex" ]
-dest_md5="3a9e1a7b838307a33bbc9841e2218d02"
+dest_files=[ "res://.import/grass_water_pathways_assets.png-084d34e8a84dc4252428f53e49381f29.stex" ]
+dest_md5="2afade5425cd75f67f2c13ea93e2d70a"
 
 [params]
 

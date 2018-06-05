@@ -1,0 +1,402 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Scenes/Level/Assets/grass_water_pathways_assets(cropped).png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 32, 32 )
+
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 32, 32 )
+
+[sub_resource type="RectangleShape2D" id=3]
+
+custom_solver_bias = 0.0
+extents = Vector2( 32, 32 )
+
+[sub_resource type="RectangleShape2D" id=4]
+
+custom_solver_bias = 0.0
+extents = Vector2( 32, 32 )
+
+[sub_resource type="RectangleShape2D" id=5]
+
+custom_solver_bias = 0.0
+extents = Vector2( 32, 32 )
+
+[sub_resource type="RectangleShape2D" id=6]
+
+custom_solver_bias = 0.0
+extents = Vector2( 32, 32 )
+
+[sub_resource type="RectangleShape2D" id=7]
+
+custom_solver_bias = 0.0
+extents = Vector2( 32, 32 )
+
+[node name="Textures" type="Node2D"]
+
+[node name="grass1" type="Sprite" parent="." index="0"]
+
+position = Vector2( 32, 32 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 64, 64 )
+region_filter_clip = true
+_sections_unfolded = [ "Region" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="grass2" type="Sprite" parent="." index="1"]
+
+position = Vector2( 99, 32 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 65, 0, 64, 64 )
+_sections_unfolded = [ "Region" ]
+
+[node name="grass3" type="Sprite" parent="." index="2"]
+
+position = Vector2( 166, 32 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 130, 0, 64, 64 )
+_sections_unfolded = [ "Region" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="coast1" type="Sprite" parent="." index="3"]
+
+position = Vector2( 32, 99 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 195, 0, 64, 64 )
+_sections_unfolded = [ "Region" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="coast1" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="coast1/StaticBody2D" index="0"]
+
+shape = SubResource( 1 )
+
+[node name="coast2" type="Sprite" parent="." index="4"]
+
+position = Vector2( 99, 99 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 260, 0, 64, 64 )
+_sections_unfolded = [ "Region" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="coast2" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="coast2/StaticBody2D" index="0"]
+
+shape = SubResource( 2 )
+
+[node name="coast3" type="Sprite" parent="." index="5"]
+
+position = Vector2( 166, 99 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 325, 0, 64, 64 )
+_sections_unfolded = [ "Region" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="coast3" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="coast3/StaticBody2D" index="0"]
+
+shape = SubResource( 3 )
+
+[node name="coast4" type="Sprite" parent="." index="6"]
+
+position = Vector2( 233, 99 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 390, 0, 64, 64 )
+_sections_unfolded = [ "Region" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="coast4" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="coast4/StaticBody2D" index="0"]
+
+shape = SubResource( 4 )
+
+[node name="coast5" type="Sprite" parent="." index="7"]
+
+position = Vector2( 300, 99 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 455, 0, 64, 64 )
+_sections_unfolded = [ "Region" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="coast5" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="coast5/StaticBody2D" index="0"]
+
+shape = SubResource( 5 )
+
+[node name="coast6" type="Sprite" parent="." index="8"]
+
+position = Vector2( 367, 99 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 520, 0, 64, 64 )
+_sections_unfolded = [ "Region" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="coast6" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="coast6/StaticBody2D" index="0"]
+
+shape = SubResource( 6 )
+
+[node name="coast7" type="Sprite" parent="." index="9"]
+
+position = Vector2( 434, 99 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 585, 0, 64, 64 )
+_sections_unfolded = [ "Region" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="coast7" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="coast7/StaticBody2D" index="0"]
+
+shape = SubResource( 7 )
+
+[node name="coast8" type="Sprite" parent="." index="10"]
+
+position = Vector2( 501, 99 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 585, 0, 64, 64 )
+_sections_unfolded = [ "Region" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="water" type="Sprite" parent="." index="11"]
+
+position = Vector2( 568, 99 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 650, 0, 64, 64 )
+_sections_unfolded = [ "Region" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="grassground1" type="Sprite" parent="." index="12"]
+
+position = Vector2( 32, 166 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 65, 64, 64 )
+_sections_unfolded = [ "Region" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="grassground2" type="Sprite" parent="." index="13"]
+
+position = Vector2( 99, 166 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 65, 65, 64, 64 )
+_sections_unfolded = [ "Region" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="grassground3" type="Sprite" parent="." index="14"]
+
+position = Vector2( 166, 166 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 130, 65, 64, 64 )
+_sections_unfolded = [ "Region" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="grassground4" type="Sprite" parent="." index="15"]
+
+position = Vector2( 233, 166 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 195, 65, 64, 64 )
+_sections_unfolded = [ "Region" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ground1" type="Sprite" parent="." index="16"]
+
+position = Vector2( 300, 166 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 260, 65, 64, 64 )
+_sections_unfolded = [ "Region" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ground2" type="Sprite" parent="." index="17"]
+
+position = Vector2( 367, 166 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 325, 65, 64, 64 )
+_sections_unfolded = [ "Region" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="pathway1" type="Sprite" parent="." index="18"]
+
+position = Vector2( 32, 233 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 390, 65, 64, 64 )
+_sections_unfolded = [ "Region" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="pathway2" type="Sprite" parent="." index="19"]
+
+position = Vector2( 99, 233 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 455, 65, 64, 64 )
+_sections_unfolded = [ "Region" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="pathway3" type="Sprite" parent="." index="20"]
+
+position = Vector2( 166, 233 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 520, 65, 64, 64 )
+_sections_unfolded = [ "Region" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="pathway4" type="Sprite" parent="." index="21"]
+
+position = Vector2( 233, 233 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 585, 65, 64, 64 )
+_sections_unfolded = [ "Region" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="pathway5" type="Sprite" parent="." index="22"]
+
+position = Vector2( 300, 233 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 650, 65, 64, 64 )
+_sections_unfolded = [ "Region" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="pathway6" type="Sprite" parent="." index="23"]
+
+position = Vector2( 367, 233 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 130, 64, 64 )
+_sections_unfolded = [ "Region" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+
