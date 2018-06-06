@@ -7,10 +7,10 @@ path="res://.import/grass_water_pathways_assets(cropped).png-5dc8f5805bf9eb8f537
 [deps]
 
 source_file="res://Scenes/Level/Assets/grass_water_pathways_assets(cropped).png"
-source_md5="d6bbaa878db0e3211ef1df32261c570d"
+source_md5="2b761181d6088dfe194921311bb76c8e"
 
 dest_files=[ "res://.import/grass_water_pathways_assets(cropped).png-5dc8f5805bf9eb8f537f6499cbff5697.stex" ]
-dest_md5="e6f0e42ccd0f0b0d0480430a6156f354"
+dest_md5="c01011cb3b810add98275e35c1732c23"
 
 [params]
 

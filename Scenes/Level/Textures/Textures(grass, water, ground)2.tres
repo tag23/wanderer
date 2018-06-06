@@ -290,4 +290,5 @@ extents = Vector2( 32, 32 )
 23/occluder_offset = Vector2( 32, 32 )
 23/navigation_offset = Vector2( 32, 32 )
 23/shapes = [  ]
+_sections_unfolded = [ "2" ]
 
